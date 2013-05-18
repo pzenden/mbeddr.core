@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.core.modules.runtime" uuid="fda566a8-0df7-442b-b355-ba0f7b3d1cbd" pluginKind="PLUGIN_EDITOR" compileInMPS="true">
+<solution name="com.mbeddr.core.modules.runtime" uuid="fda566a8-0df7-442b-b355-ba0f7b3d1cbd" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/" />
     <modelRoot path="${solution_descriptor}/lib/commons-io-2.4.jar">
