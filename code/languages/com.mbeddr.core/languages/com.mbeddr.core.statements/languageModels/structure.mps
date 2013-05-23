@@ -208,6 +208,11 @@
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4115720392370607692">
       <property name="name" nameId="tpck.1169194664001" value="IStructuredInitExpression" />
     </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3437898551792253645">
+      <property name="name" nameId="tpck.1169194664001" value="AsmStatement" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="asm" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="4185783222026464515" resolveInfo="Statement" />
+    </node>
   </roots>
   <root id="4185783222026464515">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="4058325937810995945">
@@ -921,6 +926,12 @@
   <root id="4115720392370607692">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1357038773596697484">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1l.5160057464295077059" resolveInfo="IRequiresTypeToBeInferred" />
+    </node>
+  </root>
+  <root id="3437898551792253645">
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3437898551792253654">
+      <property name="name" nameId="tpck.1169194664001" value="code" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
 </model>
