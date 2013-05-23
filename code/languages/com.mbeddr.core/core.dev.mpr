@@ -22,7 +22,6 @@
       <modulePath path="${project}/languages/com.mbeddr.core.base/solutions/pluginSolution/pluginSolution.msd" folder="core.solutions" />
       <modulePath path="${project}/languages/com.mbeddr.core.buildconfig/buildconfig.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.cimport/com.mbeddr.core.cimport.mpl" folder="core" />
-      <modulePath path="${project}/languages/com.mbeddr.core.cstubs.test/test.mpl" folder="tests.cstub" />
       <modulePath path="${project}/languages/com.mbeddr.core.cstubs/cstubs.mpl" folder="core" />
       <modulePath path="${project}/languages/com.mbeddr.core.embedded/embedded.mpl" folder="core-extended" />
       <modulePath path="${project}/languages/com.mbeddr.core.expressions/expressions.mpl" folder="core" />
@@ -46,6 +45,7 @@
       <modulePath path="${project}/languages/dataflow/dataflow.mpl" folder="core" />
       <modulePath path="${project}/languages/intermediatesymbols/com.mbeddr.core.intermediatesymbols.mpl" folder="core" />
       <modulePath path="${project}/solutions/com.mbeddr.core.cimport.showcase/com.mbeddr.core.cimport.showcase.msd" folder="core.solutions" />
+      <modulePath path="${project}/tests/NewSolution/test.imp.core.cimport.msd" />
       <modulePath path="${project}/tests/aLibrary/aLibrary.msd" folder="tests" />
       <modulePath path="${project}/tests/test.cstub.core/core.msd" folder="tests.cstub" />
       <modulePath path="${project}/tests/test.cstub.testheader.expressions/expressions.msd" folder="tests.cstub" />
@@ -64,6 +64,14 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="core">
+          <value>
+            <Library>
+              <option name="name" value="core" />
+              <option name="path" value="${project}/" />
+            </Library>
+          </value>
+        </entry>
         <entry key="debugger">
           <value>
             <Library>
@@ -93,6 +101,14 @@
             <Library>
               <option name="name" value="spawner" />
               <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.spawner" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="var">
+          <value>
+            <Library>
+              <option name="name" value="var" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cc" />
             </Library>
           </value>
         </entry>
