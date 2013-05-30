@@ -19,7 +19,7 @@
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="21" implicit="yes" />
-  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="16" implicit="yes" />
+  <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="17" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="3c6d" modelUID="r:d6d71b6a-f5ea-4b72-bd01-9d5b19792726(com.mbeddr.ext.physicalunits.c.structure)" version="1" implicit="yes" />
   <import index="ym4j" modelUID="r:cf0df747-2506-460f-a33d-eb236a605ee8(com.mbeddr.ext.physicalunits.structure)" version="10" implicit="yes" />
@@ -224,7 +224,7 @@
     </node>
   </root>
   <root id="1265644944846176449">
-    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.FunctionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="1265644944846176450">
+    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.AssertionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="1265644944846176450">
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
       <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
@@ -236,6 +236,23 @@
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
       <link role="satemachine" roleId="q5q6.8376973589777602108" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="e1tx.7727566415687697331" resolveInfo="testFlightAnalyzer" />
+    </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.StatemachineCBMCAnalysis" typeId="q5q6.8376973589777602107" id="9047848667681071713">
+      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
+      <link role="satemachine" roleId="q5q6.8376973589777602108" targetNodeId="e1tx.7727566415687718765" resolveInfo="FlightAnalyzer" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="3791647284633043932" resolveInfo="flightAnalyzerVerification" />
+    </node>
+    <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.RobustnessCBMCAnalysis" typeId="q5q6.9047848667681355291" id="8041491615601642957">
+      <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="25" />
+      <property name="analysisDepth" nameId="q5q6.441761995014974059" value="1000" />
+      <property name="check_array_bounds" nameId="q5q6.9047848667681376987" value="true" />
+      <property name="check_div_by_zero" nameId="q5q6.9047848667681374187" value="true" />
+      <property name="check_pointer" nameId="q5q6.9047848667681376986" value="true" />
+      <property name="check_signed_overflow" nameId="q5q6.9047848667681377015" value="true" />
+      <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="3791647284633043932" resolveInfo="flightAnalyzerVerification" />
     </node>
   </root>
   <root id="3791647284633043928">
@@ -307,24 +324,25 @@
           <node role="body" roleId="c4fa.8441331188640771828" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3791647284633043945">
             <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.HarnessModule" typeId="q5q6.8985851583396455243" id="3791647284633043946">
               <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.NondetVarAssignment" typeId="q5q6.8985851583396455245" id="3791647284633043947">
+                <property name="constraintsEnabled" nameId="q5q6.2613206384568936346" value="true" />
                 <node role="varRef" roleId="q5q6.8985851583396455257" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="3791647284633043948">
                   <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3791647284633043938" resolveInfo="tp" />
                 </node>
-                <node role="constraints" roleId="q5q6.8985851583396455261" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="8330520303445072098">
-                  <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="8330520303445072129">
-                    <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="8330520303445072137">
+                <node role="constraints" roleId="q5q6.8985851583396455261" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="2613206384568952526">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="3c6d.LiteralWithUnit" typeId="3c6d.5513256947824592491" id="2613206384568952545">
+                    <node role="unit" roleId="3c6d.5513256947824592493" type="ym4j.UnitDeclarationRef" typeId="ym4j.8099136929591173606" id="2613206384568952546">
                       <link role="ref" roleId="ym4j.1085404444144943750" targetNodeId="e1tx.8135882712510800448" resolveInfo="mps" />
                     </node>
-                    <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8330520303445072107">
+                    <node role="value" roleId="3c6d.5513256947824592492" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2613206384568952536">
                       <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
                       <property name="value" nameId="mj1l.8860443239512128104" value="0" />
                     </node>
                   </node>
-                  <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="8330520303445072072">
-                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="8330520303445072082">
+                  <node role="left" roleId="mj1l.8860443239512128064" type="clbe.SUDotExpression" typeId="clbe.7063398228162529566" id="2613206384568952507">
+                    <node role="member" roleId="mj1l.1452920870317550651" type="clbe.MemberRef" typeId="clbe.7099329415460395995" id="2613206384568952517">
                       <link role="member" roleId="clbe.7099329415460397525" targetNodeId="e1tx.1731059994647588013" resolveInfo="speed" />
                     </node>
-                    <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8330520303445072063">
+                    <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2613206384568952498">
                       <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3791647284633043938" resolveInfo="tp" />
                     </node>
                   </node>
@@ -470,7 +488,7 @@
                 </node>
               </node>
               <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.AfterQUntilRMustP" typeId="q5q6.8361725885982646993" id="8330520303445097588">
-                <property name="disabled" nameId="q5q6.8330520303445148918" value="false" />
+                <property name="disabled" nameId="q5q6.8330520303445148918" value="true" />
                 <node role="r" roleId="q5q6.6876648630975719722" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="8330520303445097610">
                   <node role="right" roleId="mj1l.8860443239512128065" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="8330520303445097617">
                     <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="8330520303445097406" resolveInfo="RESET" />
@@ -494,7 +512,6 @@
                   </node>
                 </node>
               </node>
-              <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8330520303445101022" />
             </node>
           </node>
           <node role="condition" roleId="c4fa.8441331188640771827" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="3791647284633043973">

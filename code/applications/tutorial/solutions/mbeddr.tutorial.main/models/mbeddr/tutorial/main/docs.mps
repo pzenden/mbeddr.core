@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:42ceb07b-59b7-4af0-9bb1-7aea4ac30207(mbeddr.tutorial.main.docs)">
   <persistence version="7" />
+  <language namespace="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
+  <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
+  <language namespace="1c5b7d51-0ef3-4332-af36-874466950878(com.mbeddr.doc.expressions)" />
   <devkit namespace="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   <import index="e1tx" modelUID="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="10" implicit="yes" />
+  <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="11" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="g9w8" modelUID="r:506f4964-2b3f-49f3-a581-8c498222bac6(com.mbeddr.doc.gen_latex.structure)" version="-1" implicit="yes" />
-  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="4" implicit="yes" />
+  <import index="rh4a" modelUID="r:51a64317-678a-4e8f-9df1-1e83f73c9d71(com.mbeddr.doc.c.structure)" version="5" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="21" implicit="yes" />
+  <import index="f87k" modelUID="r:e7473124-6323-4ddf-9715-6e1684f751bd(com.mbeddr.doc.expressions.structure)" version="-1" implicit="yes" />
   <roots>
     <node type="2c95.Document" typeId="2c95.3350625596579911728" id="2637267020265430783">
       <property name="name" nameId="tpck.1169194664001" value="overview" />
@@ -84,19 +89,19 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.Visualization" typeId="rh4a.4755612053022373494" id="794010416819988002">
-        <property name="category" nameId="rh4a.4755612053022373532" value="module dependencies" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Visualization" typeId="2c95.2588579461812060090" id="794010416819988002">
+        <property name="category" nameId="2c95.2588579461812060097" value="module dependencies" />
         <property name="name" nameId="tpck.1169194664001" value="moduleDeps" />
-        <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="e1tx.9141254329931944284" resolveInfo="MbeddrTutorial" />
-        <link role="path" roleId="rh4a.4755612053022398751" targetNodeId="794010416819988006" resolveInfo="vis" />
-        <node role="description" roleId="rh4a.4755612053022495458" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="794010416819988003">
+        <link role="visualizable" roleId="2c95.2588579461812060095" targetNodeId="e1tx.9141254329931944284" resolveInfo="MbeddrTutorial" />
+        <link role="path" roleId="2c95.2588579461812060096" targetNodeId="794010416819988006" resolveInfo="vis" />
+        <node role="description" roleId="2c95.2588579461812060099" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="794010416819988003">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="794010416819988004">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="794010416819988005">
               <property name="escapedValue" nameId="87nw.2557074442922438158" value="An overview over the module dependencies in the tutorial." />
             </node>
           </node>
         </node>
-        <node role="sizeSpec" roleId="rh4a.8624890525767931145" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8624890525768078258">
+        <node role="sizeSpec" roleId="2c95.2588579461812060100" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8624890525768078258">
           <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8624890525768078251" resolveInfo="width100" />
         </node>
       </node>
@@ -308,19 +313,19 @@
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="349463322506879566" />
           </node>
         </node>
-        <node role="contents" roleId="2c95.3350625596580064250" type="rh4a.Visualization" typeId="rh4a.4755612053022373494" id="4715820023543612306">
-          <property name="category" nameId="rh4a.4755612053022373532" value="components + interfaces (grouped)" />
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Visualization" typeId="2c95.2588579461812060090" id="4715820023543612306">
+          <property name="category" nameId="2c95.2588579461812060097" value="components + interfaces (grouped)" />
           <property name="name" nameId="tpck.1169194664001" value="ci" />
-          <link role="visualizable" roleId="rh4a.4755612053022373496" targetNodeId="e1tx.1731059994647814010" resolveInfo="TrackpointStore1" />
-          <link role="path" roleId="rh4a.4755612053022398751" targetNodeId="794010416819988006" resolveInfo="vis" />
-          <node role="description" roleId="rh4a.4755612053022495458" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4715820023543612307">
+          <link role="visualizable" roleId="2c95.2588579461812060095" targetNodeId="e1tx.1731059994647814010" resolveInfo="TrackpointStore1" />
+          <link role="path" roleId="2c95.2588579461812060096" targetNodeId="794010416819988006" resolveInfo="vis" />
+          <node role="description" roleId="2c95.2588579461812060099" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4715820023543612307">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4715820023543612308">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4715820023543612309">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="The components and their provided (solid lines) and required (dotted lines) ports." />
               </node>
             </node>
           </node>
-          <node role="sizeSpec" roleId="rh4a.8624890525767931145" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8624890525768078254">
+          <node role="sizeSpec" roleId="2c95.2588579461812060100" type="2c95.InheritSizeSpec" typeId="2c95.8624890525767650652" id="8624890525768078254">
             <link role="base" roleId="2c95.8624890525767800818" targetNodeId="8624890525768078251" resolveInfo="width100" />
           </node>
         </node>
@@ -404,6 +409,77 @@
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.Section" typeId="2c95.3350625596580064455" id="5185579450378967058">
       <property name="name" nameId="tpck.1169194664001" value="newLanguages" />
       <property name="text" nameId="2c95.3350625596580064225" value="New Languages" />
+      <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="7502794012053469781">
+        <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="7502794012053469782">
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469783">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value="The Drake equation calculates the number of civilizations " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="f87k.VariableDef" typeId="f87k.5378658552263149308" id="7502794012053469784">
+            <property name="name" nameId="tpck.1169194664001" value="N" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7502794012053469785">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469786">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" in the galaxy. As input, it uses the average rate of star formation " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="f87k.VariableDef" typeId="f87k.5378658552263149308" id="7502794012053469787">
+            <property name="name" nameId="tpck.1169194664001" value="SF" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="8983772170066611044">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469789">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=", the fractios of those stars that have planets " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="f87k.VariableDef" typeId="f87k.5378658552263149308" id="7502794012053469790">
+            <property name="name" nameId="tpck.1169194664001" value="fp" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7502794012053469791">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469792">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" and the average number of planets that can potentially support life " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="f87k.VariableDef" typeId="f87k.5378658552263149308" id="7502794012053469793">
+            <property name="name" nameId="tpck.1169194664001" value="ne" />
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7502794012053469794">
+              <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+              <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053469795">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=". The number of civilizations can be calculated as " />
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="f87k.Equation" typeId="f87k.5378658552263151447" id="7502794012053477447">
+            <node role="lvalue" roleId="f87k.5378658552263151449" type="f87k.VarRef" typeId="f87k.5378658552263151469" id="7502794012053477448">
+              <link role="var" roleId="f87k.5378658552263151470" targetNodeId="7502794012053469784" resolveInfo="N" />
+            </node>
+            <node role="rvalue" roleId="f87k.5378658552263151448" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="7502794012053477449">
+              <node role="right" roleId="mj1l.8860443239512128065" type="f87k.VarRef" typeId="f87k.5378658552263151469" id="7502794012053477450">
+                <link role="var" roleId="f87k.5378658552263151470" targetNodeId="7502794012053469793" resolveInfo="ne" />
+              </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="7502794012053477451">
+                <node role="left" roleId="mj1l.8860443239512128064" type="f87k.VarRef" typeId="f87k.5378658552263151469" id="7502794012053477452">
+                  <link role="var" roleId="f87k.5378658552263151470" targetNodeId="7502794012053469787" resolveInfo="SF" />
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="f87k.VarRef" typeId="f87k.5378658552263151469" id="7502794012053477453">
+                  <link role="var" roleId="f87k.5378658552263151470" targetNodeId="7502794012053469790" resolveInfo="fp" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="7502794012053477454">
+            <property name="escapedValue" nameId="87nw.2557074442922438158" value=" " />
+          </node>
+        </node>
+        <node role="header" roleId="2c95.5185579450379273128" type="2c95.TextParHeader" typeId="2c95.5185579450379273118" id="7502794012053492167">
+          <property name="text" nameId="2c95.5185579450379273119" value="The Drake Equation" />
+        </node>
+      </node>
     </node>
     <node role="contents" roleId="2c95.3350625596580064250" type="2c95.EmptyDocContent" typeId="2c95.3350625596579911760" id="794010416819641038">
       <property name="name" nameId="tpck.1169194664001" value="empty_1362234784534_11" />
