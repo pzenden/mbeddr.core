@@ -4,15 +4,11 @@
   <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="7" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
-  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="5" implicit="yes" />
-  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="7" implicit="yes" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
-  <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <roots>
     <node type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="8463282783691753827" />
@@ -55,98 +51,98 @@
       <property name="compilerOptions" nameId="51wr.5323740605968447025" value="-std=c99" />
       <property name="debugOptions" nameId="51wr.2736179788492003937" value="-g" />
     </node>
-    <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="4459718605982730215">
-      <node role="strategy" roleId="k146.4459718605982051999" type="k146.PrintfReportingStrategy" typeId="k146.4459718605982051980" id="4459718605982730216" />
+    <node role="configurationItems" roleId="vs0r.4459718605982007338" type=".com.mbeddr.core.util.structure.ReportingConfiguration" id="4459718605982730215">
+      <node role="strategy" type=".com.mbeddr.core.util.structure.PrintfReportingStrategy" id="4459718605982730216" />
     </node>
   </root>
   <root id="8463282783691753828">
-    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8463282783691753832">
-      <property name="name" nameId="tpck.1169194664001" value="zahl" />
-      <node role="original" roleId="clbe.6116558314501347862" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5569318043967893115" />
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.core.udt.structure.TypeDef" id="8463282783691753832">
+      <property name="name" value="zahl" />
+      <node role="original" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5569318043967893115" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8463282783691753829">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="TypedefTest" />
-      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8463282783691753830">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691753836">
-          <property name="name" nameId="tpck.1169194664001" value="z1" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691753839">
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.core.unittest.structure.TestCase" id="8463282783691753829">
+      <property name="exported" value="true" />
+      <property name="name" value="TypedefTest" />
+      <node role="body" type=".com.mbeddr.core.statements.structure.StatementList" id="8463282783691753830">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="8463282783691753836">
+          <property name="name" value="z1" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691753839">
             <property name="value" nameId="mj1l.8860443239512128104" value="1" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="5083029923012080909">
-            <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="8463282783691753832" resolveInfo="zahl" />
+          <node role="type" type=".com.mbeddr.core.udt.structure.TypeDefType" id="5083029923012080909">
+            <link role="typeDef" targetNodeId="8463282783691753832" resolveInfo="zahl" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691753848">
-          <property name="name" nameId="tpck.1169194664001" value="z2" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691753851">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="8463282783691753848">
+          <property name="name" value="z2" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691753851">
             <property name="value" nameId="mj1l.8860443239512128104" value="10" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="5083029923012081284">
-            <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="8463282783691753844" resolveInfo="auchNeZahl" />
+          <node role="type" type=".com.mbeddr.core.udt.structure.TypeDefType" id="5083029923012081284">
+            <link role="typeDef" targetNodeId="8463282783691753844" resolveInfo="auchNeZahl" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691753853">
-          <property name="name" nameId="tpck.1169194664001" value="res" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="8463282783691753860">
-            <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8463282783691753863">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8463282783691753836" resolveInfo="z1" />
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="8463282783691753853">
+          <property name="name" value="res" />
+          <node role="init" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="8463282783691753860">
+            <node role="right" roleId="mj1l.8860443239512128065" type=".com.mbeddr.core.statements.structure.LocalVarRef" id="8463282783691753863">
+              <link role="var" targetNodeId="8463282783691753836" resolveInfo="z1" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8463282783691753859">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8463282783691753848" resolveInfo="z2" />
+            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.statements.structure.LocalVarRef" id="8463282783691753859">
+              <link role="var" targetNodeId="8463282783691753848" resolveInfo="z2" />
             </node>
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081257" />
+          <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081257" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8463282783691753865">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8463282783691753865" />
-          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8463282783691753868">
+        <node role="statements" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="8463282783691753865">
+          <property name="contextNodeIdD" value="8463282783691753865" />
+          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8463282783691753868">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691753871">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8463282783691753867">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8463282783691753836" resolveInfo="z1" />
+            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.statements.structure.LocalVarRef" id="8463282783691753867">
+              <link role="var" targetNodeId="8463282783691753836" resolveInfo="z1" />
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8463282783691753873">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8463282783691753873" />
-          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8463282783691753880">
+        <node role="statements" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="8463282783691753873">
+          <property name="contextNodeIdD" value="8463282783691753873" />
+          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8463282783691753880">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691753883">
               <property name="value" nameId="mj1l.8860443239512128104" value="1" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.DivExpression" typeId="mj1l.5763383285156373022" id="8463282783691753876">
-              <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8463282783691753875">
-                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8463282783691753848" resolveInfo="z2" />
+              <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.statements.structure.LocalVarRef" id="8463282783691753875">
+                <link role="var" targetNodeId="8463282783691753848" resolveInfo="z2" />
               </node>
-              <node role="right" roleId="mj1l.8860443239512128065" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8463282783691753879">
-                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8463282783691753848" resolveInfo="z2" />
+              <node role="right" roleId="mj1l.8860443239512128065" type=".com.mbeddr.core.statements.structure.LocalVarRef" id="8463282783691753879">
+                <link role="var" targetNodeId="8463282783691753848" resolveInfo="z2" />
               </node>
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="8463282783691753886">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="8463282783691753886" />
-          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8463282783691753890">
+        <node role="statements" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="8463282783691753886">
+          <property name="contextNodeIdD" value="8463282783691753886" />
+          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8463282783691753890">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691753893">
               <property name="value" nameId="mj1l.8860443239512128104" value="11" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8463282783691753889">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8463282783691753853" resolveInfo="res" />
+            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.statements.structure.LocalVarRef" id="8463282783691753889">
+              <link role="var" targetNodeId="8463282783691753853" resolveInfo="res" />
             </node>
           </node>
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622915268" />
+      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622915268" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8463282783691753895">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8463282783691753896">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8463282783691753906">
-          <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="8463282783691753907">
-            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="8463282783691753908">
-              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="8463282783691753829" resolveInfo="TypedefTest" />
+      <node role="body" roleId="x27k.4185783222026475860" type=".com.mbeddr.core.statements.structure.StatementList" id="8463282783691753896">
+        <node role="statements" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8463282783691753906">
+          <node role="expression" roleId="x27k.8967919205527146150" type=".com.mbeddr.core.unittest.structure.ExecuteTestExpression" id="8463282783691753907">
+            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="8463282783691753908">
+              <link role="testcase" targetNodeId="8463282783691753829" resolveInfo="TypedefTest" />
             </node>
           </node>
         </node>
@@ -168,21 +164,21 @@
     </node>
   </root>
   <root id="8463282783691753842">
-    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="8463282783691753844">
-      <property name="name" nameId="tpck.1169194664001" value="auchNeZahl" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="original" roleId="clbe.6116558314501347862" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5569318043967893114" />
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.core.udt.structure.TypeDef" id="8463282783691753844">
+      <property name="name" value="auchNeZahl" />
+      <property name="exported" value="true" />
+      <node role="original" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5569318043967893114" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7705997077751339857">
       <property name="name" nameId="tpck.1169194664001" value="empty_1332336603501_1" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="7705997077751339859">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="testTypeDefFromExternal" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7705997077751339860" />
-      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7705997077751339861">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="7705997077751417295">
-          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587946">
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.core.unittest.structure.TestCase" id="7705997077751339859">
+      <property name="exported" value="true" />
+      <property name="name" value="testTypeDefFromExternal" />
+      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="7705997077751339860" />
+      <node role="body" type=".com.mbeddr.core.statements.structure.StatementList" id="7705997077751339861">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.CommentStatement" id="7705997077751417295">
+          <node role="textblock" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8624890525768587946">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8624890525768587949">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8624890525768587951">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="uses someInt from ExtModuleWithTypeDef" />
@@ -190,18 +186,18 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="7705997077751339871">
-          <property name="name" nameId="tpck.1169194664001" value="var" />
-          <node role="type" roleId="mj1l.318113533128716676" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="7705997077751341999">
-            <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="7705997077751341674" resolveInfo="smallTTT" />
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="7705997077751339871">
+          <property name="name" value="var" />
+          <node role="type" type=".com.mbeddr.core.udt.structure.TypeDefType" id="7705997077751341999">
+            <link role="typeDef" targetNodeId="7705997077751341674" resolveInfo="smallTTT" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7705997077751339874">
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7705997077751339874">
             <property name="value" nameId="mj1l.8860443239512128104" value="20" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="7705997077751415656">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7705997077751415656" />
-          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7705997077751415661">
+        <node role="statements" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="7705997077751415656">
+          <property name="contextNodeIdD" value="7705997077751415656" />
+          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7705997077751415661">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7705997077751415664">
               <property name="value" nameId="mj1l.8860443239512128104" value="22" />
             </node>
@@ -210,14 +206,14 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="yz9a.AssertStatement" typeId="yz9a.6275792049641587287" id="7705997077751339868">
-          <property name="contextNodeIdD" nameId="x27k.5114214484368231289" value="7705997077751339868" />
-          <node role="expr" roleId="yz9a.6275792049641587288" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7705997077751339880">
+        <node role="statements" type=".com.mbeddr.core.unittest.structure.AssertStatement" id="7705997077751339868">
+          <property name="contextNodeIdD" value="7705997077751339868" />
+          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="7705997077751339880">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7705997077751339883">
               <property name="value" nameId="mj1l.8860443239512128104" value="20" />
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7705997077751339877">
-              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="7705997077751339871" resolveInfo="var" />
+            <node role="left" roleId="mj1l.8860443239512128064" type=".com.mbeddr.core.statements.structure.LocalVarRef" id="7705997077751339877">
+              <link role="var" targetNodeId="7705997077751339871" resolveInfo="var" />
             </node>
           </node>
         </node>
@@ -228,9 +224,9 @@
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="3562155621519347858">
       <property name="name" nameId="tpck.1169194664001" value="functionTest" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="3562155621519347860">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="3562155621519347862">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="3562155621519347866">
+      <node role="body" roleId="x27k.4185783222026475860" type=".com.mbeddr.core.statements.structure.StatementList" id="3562155621519347860">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.ExpressionStatement" id="3562155621519347862">
+          <node role="expr" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="3562155621519347866">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="3562155621519347869">
               <property name="value" nameId="mj1l.8860443239512128104" value="10" />
             </node>
@@ -250,302 +246,302 @@
     </node>
   </root>
   <root id="8463282783691754121">
-    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8463282783691754122">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="CKRTypes" />
-      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8463282783691754123">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691754147">
-          <property name="name" nameId="tpck.1169194664001" value="c" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="8463282783691754151">
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.core.unittest.structure.TestCase" id="8463282783691754122">
+      <property name="exported" value="true" />
+      <property name="name" value="CKRTypes" />
+      <node role="body" type=".com.mbeddr.core.statements.structure.StatementList" id="8463282783691754123">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="8463282783691754147">
+          <property name="name" value="c" />
+          <node role="init" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="8463282783691754151">
             <property name="value" nameId="mj1l.1664480272136214701" value="a" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081386" />
+          <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081386" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691762339">
-          <property name="name" nameId="tpck.1169194664001" value="i" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691762342">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="8463282783691762339">
+          <property name="name" value="i" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691762342">
             <property name="value" nameId="mj1l.8860443239512128104" value="1" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081072" />
+          <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012081072" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691762344">
-          <property name="name" nameId="tpck.1169194664001" value="l" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691762347">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="8463282783691762344">
+          <property name="name" value="l" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691762347">
             <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5083029923012081340" />
+          <node role="type" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5083029923012081340" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691762435">
-          <property name="name" nameId="tpck.1169194664001" value="ll" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6105535929785612427">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="8463282783691762435">
+          <property name="name" value="ll" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6105535929785612427">
             <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="5083029923012080939" />
+          <node role="type" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="5083029923012080939" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8463282783691762365" />
+        <node role="statements" type=".com.mbeddr.core.statements.structure.Statement" id="8463282783691762365" />
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622915252" />
+      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622915252" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8463282783691754126">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="C99Types" />
-      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8463282783691754127">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691762390">
-          <property name="name" nameId="tpck.1169194664001" value="c" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="6105535929785710447">
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.core.unittest.structure.TestCase" id="8463282783691754126">
+      <property name="exported" value="true" />
+      <property name="name" value="C99Types" />
+      <node role="body" type=".com.mbeddr.core.statements.structure.StatementList" id="8463282783691754127">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="8463282783691762390">
+          <property name="name" value="c" />
+          <node role="init" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="6105535929785710447">
             <property name="value" nameId="mj1l.1664480272136214701" value="a" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080751" />
+          <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="5083029923012080751" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315910">
-          <property name="name" nameId="tpck.1169194664001" value="s" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4923881075313315912" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315914">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315910">
+          <property name="name" value="s" />
+          <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4923881075313315912" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315914">
             <property name="value" nameId="mj1l.8860443239512128104" value="1" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691762393">
-          <property name="name" nameId="tpck.1169194664001" value="i" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6105535929785728539">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="8463282783691762393">
+          <property name="name" value="i" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6105535929785728539">
             <property name="value" nameId="mj1l.8860443239512128104" value="1" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5083029923012080913" />
+          <node role="type" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5083029923012080913" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691762396">
-          <property name="name" nameId="tpck.1169194664001" value="l" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691762398">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="8463282783691762396">
+          <property name="name" value="l" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691762398">
             <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5083029923012081334" />
+          <node role="type" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5083029923012081334" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691762399">
-          <property name="name" nameId="tpck.1169194664001" value="ll" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691762401">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="8463282783691762399">
+          <property name="name" value="ll" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691762401">
             <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="5083029923012080876" />
+          <node role="type" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="5083029923012080876" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4923881075313315892" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315906">
-          <property name="name" nameId="tpck.1169194664001" value="us" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="4923881075313315909">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.Statement" id="4923881075313315892" />
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315906">
+          <property name="name" value="us" />
+          <node role="type" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="4923881075313315909">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315916">
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315916">
             <property name="value" nameId="mj1l.8860443239512128104" value="1" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315903">
-          <property name="name" nameId="tpck.1169194664001" value="ui" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315904">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315903">
+          <property name="name" value="ui" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315904">
             <property name="value" nameId="mj1l.8860443239512128104" value="1" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="4923881075313315917">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315900">
-          <property name="name" nameId="tpck.1169194664001" value="ul" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315901">
-            <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
-          </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="4923881075313315918">
+          <node role="type" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="4923881075313315917">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315897">
-          <property name="name" nameId="tpck.1169194664001" value="ull" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315898">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315900">
+          <property name="name" value="ul" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315901">
             <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt64tType" typeId="mj1l.8463282783691618456" id="4923881075313315919">
+          <node role="type" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="4923881075313315918">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4923881075313315896" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315893">
-          <property name="name" nameId="tpck.1169194664001" value="cs" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4923881075313315895">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315897">
+          <property name="name" value="ull" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315898">
+            <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
+          </node>
+          <node role="type" type="mj1l.UnsignedInt64tType" typeId="mj1l.8463282783691618456" id="4923881075313315919">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="statements" type=".com.mbeddr.core.statements.structure.Statement" id="4923881075313315896" />
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315893">
+          <property name="name" value="cs" />
+          <node role="type" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="4923881075313315895">
             <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315921">
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315921">
             <property name="value" nameId="mj1l.8860443239512128104" value="1" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315889">
-          <property name="name" nameId="tpck.1169194664001" value="ci" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315890">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315889">
+          <property name="name" value="ci" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315890">
             <property name="value" nameId="mj1l.8860443239512128104" value="1" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="4923881075313315891">
+          <node role="type" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="4923881075313315891">
             <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315886">
-          <property name="name" nameId="tpck.1169194664001" value="cl" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315887">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315886">
+          <property name="name" value="cl" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315887">
             <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4923881075313315888">
+          <node role="type" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="4923881075313315888">
             <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315883">
-          <property name="name" nameId="tpck.1169194664001" value="cll" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315884">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315883">
+          <property name="name" value="cll" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315884">
             <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="4923881075313315885">
+          <node role="type" type="mj1l.Int64tType" typeId="mj1l.8463282783691618445" id="4923881075313315885">
             <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4923881075313315934" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315956">
-          <property name="name" nameId="tpck.1169194664001" value="cus" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="4923881075313315957">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.Statement" id="4923881075313315934" />
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315956">
+          <property name="name" value="cus" />
+          <node role="type" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="4923881075313315957">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315958">
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315958">
             <property name="value" nameId="mj1l.8860443239512128104" value="1" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315953">
-          <property name="name" nameId="tpck.1169194664001" value="cui" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315954">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315953">
+          <property name="name" value="cui" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315954">
             <property name="value" nameId="mj1l.8860443239512128104" value="1" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="4923881075313315955">
+          <node role="type" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="4923881075313315955">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315950">
-          <property name="name" nameId="tpck.1169194664001" value="cul" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315951">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315950">
+          <property name="name" value="cul" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315951">
             <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="4923881075313315952">
+          <node role="type" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="4923881075313315952">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315947">
-          <property name="name" nameId="tpck.1169194664001" value="cull" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315948">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315947">
+          <property name="name" value="cull" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315948">
             <property name="value" nameId="mj1l.8860443239512128104" value="1000" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt64tType" typeId="mj1l.8463282783691618456" id="4923881075313315949">
+          <node role="type" type="mj1l.UnsignedInt64tType" typeId="mj1l.8463282783691618456" id="4923881075313315949">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4923881075313422469" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313422466">
-          <property name="name" nameId="tpck.1169194664001" value="cusp" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="4923881075313422467">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.Statement" id="4923881075313422469" />
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313422466">
+          <property name="name" value="cusp" />
+          <node role="type" type="mj1l.UnsignedInt8tType" typeId="mj1l.8463282783691618461" id="4923881075313422467">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           </node>
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313422468">
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313422468">
             <property name="value" nameId="mj1l.8860443239512128104" value="1U" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313422463">
-          <property name="name" nameId="tpck.1169194664001" value="cuip" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313422464">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313422463">
+          <property name="name" value="cuip" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313422464">
             <property name="value" nameId="mj1l.8860443239512128104" value="1U" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="4923881075313422465">
+          <node role="type" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="4923881075313422465">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313422460">
-          <property name="name" nameId="tpck.1169194664001" value="culp" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313422461">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313422460">
+          <property name="name" value="culp" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313422461">
             <property name="value" nameId="mj1l.8860443239512128104" value="1000U" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="4923881075313422462">
+          <node role="type" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="4923881075313422462">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313422457">
-          <property name="name" nameId="tpck.1169194664001" value="cullp" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313422458">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313422457">
+          <property name="name" value="cullp" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313422458">
             <property name="value" nameId="mj1l.8860443239512128104" value="1000U" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt64tType" typeId="mj1l.8463282783691618456" id="4923881075313422459">
+          <node role="type" type="mj1l.UnsignedInt64tType" typeId="mj1l.8463282783691618456" id="4923881075313422459">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8463282783691762402" />
+        <node role="statements" type=".com.mbeddr.core.statements.structure.Statement" id="8463282783691762402" />
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622915309" />
+      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622915309" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="6105535929785829140">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="FPTypes" />
-      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="6105535929785829141">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691762379">
-          <property name="name" nameId="tpck.1169194664001" value="f" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691762381">
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.core.unittest.structure.TestCase" id="6105535929785829140">
+      <property name="exported" value="true" />
+      <property name="name" value="FPTypes" />
+      <node role="body" type=".com.mbeddr.core.statements.structure.StatementList" id="6105535929785829141">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="8463282783691762379">
+          <property name="name" value="f" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691762381">
             <property name="value" nameId="mj1l.8860443239512128104" value="3.14" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="5083029923012080967" />
+          <node role="type" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="5083029923012080967" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8463282783691762382">
-          <property name="name" nameId="tpck.1169194664001" value="d" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691762384">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="8463282783691762382">
+          <property name="name" value="d" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8463282783691762384">
             <property name="value" nameId="mj1l.8860443239512128104" value="3.14" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="5083029923012080995" />
+          <node role="type" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="5083029923012080995" />
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4923881075313315965" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315962">
-          <property name="name" nameId="tpck.1169194664001" value="cf" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315963">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.Statement" id="4923881075313315965" />
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315962">
+          <property name="name" value="cf" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315963">
             <property name="value" nameId="mj1l.8860443239512128104" value="3.14" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="4923881075313315964">
+          <node role="type" type="mj1l.FloatType" typeId="mj1l.4739982148980385695" id="4923881075313315964">
             <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="4923881075313315959">
-          <property name="name" nameId="tpck.1169194664001" value="cd" />
-          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315960">
+        <node role="statements" type=".com.mbeddr.core.statements.structure.LocalVariableDeclaration" id="4923881075313315959">
+          <property name="name" value="cd" />
+          <node role="init" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4923881075313315960">
             <property name="value" nameId="mj1l.8860443239512128104" value="3.14" />
           </node>
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="4923881075313315961">
+          <node role="type" type="mj1l.DoubleType" typeId="mj1l.8864856114140038681" id="4923881075313315961">
             <property name="const" nameId="mj1l.2941277002445651368" value="true" />
           </node>
         </node>
       </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622915203" />
+      <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5708867820622915203" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8463282783691754130">
       <property name="name" nameId="tpck.1169194664001" value="main" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8463282783691754131">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8463282783691754141">
-          <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="8463282783691754142">
-            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="8463282783691754144">
-              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="8463282783691754122" resolveInfo="CKRTypes" />
+      <node role="body" roleId="x27k.4185783222026475860" type=".com.mbeddr.core.statements.structure.StatementList" id="8463282783691754131">
+        <node role="statements" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8463282783691754141">
+          <node role="expression" roleId="x27k.8967919205527146150" type=".com.mbeddr.core.unittest.structure.ExecuteTestExpression" id="8463282783691754142">
+            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="8463282783691754144">
+              <link role="testcase" targetNodeId="8463282783691754122" resolveInfo="CKRTypes" />
             </node>
-            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="6105535929785829143">
-              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="8463282783691754126" resolveInfo="C99Types" />
+            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="6105535929785829143">
+              <link role="testcase" targetNodeId="8463282783691754126" resolveInfo="C99Types" />
             </node>
-            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="7705997077751339886">
-              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="6105535929785829140" resolveInfo="FPTypes" />
+            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="7705997077751339886">
+              <link role="testcase" targetNodeId="6105535929785829140" resolveInfo="FPTypes" />
             </node>
-            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="7705997077751339889">
-              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="7705997077751339859" resolveInfo="testTypeDefFromExternal" />
+            <node role="tests" type=".com.mbeddr.core.unittest.structure.TestCaseRef" id="7705997077751339889">
+              <link role="testcase" targetNodeId="7705997077751339859" resolveInfo="testTypeDefFromExternal" />
             </node>
           </node>
         </node>
@@ -629,20 +625,20 @@
         <property name="value" nameId="mj1l.8860443239512128104" value="22" />
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="7705997077751341664">
-      <property name="name" nameId="tpck.1169194664001" value="smallT" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
-      <node role="original" roleId="clbe.6116558314501347862" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7705997077751341666" />
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.core.udt.structure.TypeDef" id="7705997077751341664">
+      <property name="name" value="smallT" />
+      <property name="exported" value="false" />
+      <node role="original" type="mj1l.Int8tType" typeId="mj1l.8463282783691618426" id="7705997077751341666" />
     </node>
     <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="7705997077751341996">
       <property name="path" nameId="x27k.6116558314501417936" value="&quot;../externalModules/ModuleWithTypeDef.h&quot;" />
     </node>
   </root>
   <root id="7705997077751331420">
-    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.TypeDef" typeId="clbe.6116558314501347857" id="7705997077751341674">
-      <property name="name" nameId="tpck.1169194664001" value="smallTTT" />
-      <node role="original" roleId="clbe.6116558314501347862" type="clbe.TypeDefType" typeId="clbe.6116558314501347863" id="7705997077751341677">
-        <link role="typeDef" roleId="clbe.6116558314501347864" targetNodeId="7705997077751341664" resolveInfo="smallT" />
+    <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.core.udt.structure.TypeDef" id="7705997077751341674">
+      <property name="name" value="smallTTT" />
+      <node role="original" type=".com.mbeddr.core.udt.structure.TypeDefType" id="7705997077751341677">
+        <link role="typeDef" targetNodeId="7705997077751341664" resolveInfo="smallT" />
       </node>
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="7705997077751339852">

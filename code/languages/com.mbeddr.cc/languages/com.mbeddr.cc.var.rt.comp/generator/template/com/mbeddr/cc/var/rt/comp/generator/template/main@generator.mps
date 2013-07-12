@@ -14,8 +14,10 @@
   <import index="x6xn" modelUID="r:6718400a-0d95-41e2-976e-b2f9b177ae4a(com.mbeddr.cc.var.rt.comp.behavior)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
+  <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="6" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <roots>
@@ -31,14 +33,14 @@
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="8000796061690146340">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="7pum.8000796061690145833" resolveInfo="CreateConfigExpr" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.InlineTemplateWithContext_RuleConsequence" typeId="tpf8.8900764248744213868" id="8000796061690146379">
-        <node role="contentNode" roleId="tpf8.8900764248744213871" type=".com.mbeddr.core.modules.structure.ImplementationModule" id="8000796061690146381">
-          <property name="name" value="dummy" />
-          <node role="contents" type=".com.mbeddr.cc.var.rt.structure.RtFeatureModel" id="8000796061690169864">
+        <node role="contentNode" roleId="tpf8.8900764248744213871" type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8000796061690146381">
+          <property name="name" nameId="tpck.1169194664001" value="dummy" />
+          <node role="contents" roleId="x27k.6437088627575722833" type=".com.mbeddr.cc.var.rt.structure.RtFeatureModel" id="8000796061690169864">
             <link role="featureModel" targetNodeId="8000796061690169910" resolveInfo="FM" />
           </node>
-          <node role="contents" type=".com.mbeddr.core.modules.structure.Function" id="8000796061690146384">
-            <property name="name" value="dummy" />
-            <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061690146386">
+          <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8000796061690146384">
+            <property name="name" nameId="tpck.1169194664001" value="dummy" />
+            <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061690146386">
               <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8000796061690146390">
                 <property name="name" nameId="tpck.1169194664001" value="x" />
                 <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.cc.var.rt.structure.RtFeatureModelType" id="8000796061690169954">
@@ -46,8 +48,8 @@
                   <property name="const" value="false" />
                   <link role="featureModel" targetNodeId="8000796061690169864" resolveInfo="FM" />
                 </node>
-                <node role="init" roleId="c4fa.4185783222026502647" type=".com.mbeddr.core.util.structure.BlockExpression" id="8000796061690146393">
-                  <node role="body" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061690146394">
+                <node role="init" roleId="c4fa.4185783222026502647" type="k146.BlockExpression" typeId="k146.5686538669182273028" id="8000796061690146393">
+                  <node role="body" roleId="k146.5686538669182273029" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8000796061690146394">
                     <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="8000796061690169853">
                       <property name="name" nameId="tpck.1169194664001" value="cfg" />
                       <node role="type" roleId="mj1l.318113533128716676" type=".com.mbeddr.cc.var.rt.structure.RtFeatureModelType" id="8000796061690169854">
@@ -108,17 +110,17 @@
                         </node>
                       </node>
                     </node>
-                    <node role="statements" roleId="c4fa.4185783222026475862" type=".com.mbeddr.core.util.structure.YieldStatement" id="8000796061690169856">
-                      <node role="expr" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8000796061690169858">
+                    <node role="statements" roleId="c4fa.4185783222026475862" type="k146.YieldStatement" typeId="k146.5686538669182296661" id="8000796061690169856">
+                      <node role="expr" roleId="k146.5686538669182296662" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8000796061690169858">
                         <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8000796061690169853" resolveInfo="cfg" />
                       </node>
                     </node>
                   </node>
-                  <node role="smodelAttribute" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="8000796061690146402" />
+                  <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="8000796061690146402" />
                 </node>
               </node>
             </node>
-            <node role="type" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8000796061690146383">
+            <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8000796061690146383">
               <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
               <property name="const" nameId="mj1l.2941277002445651368" value="false" />
             </node>

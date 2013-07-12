@@ -324,7 +324,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="6598859022323008756">
       <property name="name" nameId="tpck.1169194664001" value="analysis" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="q5q6.6472990431939799907" resolveInfo="CBMCAnalysis" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="q5q6.6472990431939799907" resolveInfo="CProverBasedAnalysis" />
     </node>
   </root>
   <root id="6514529288614084405">
