@@ -2037,6 +2037,8 @@
               <link role="header" roleId="bnk3.1397920687865064692" targetNodeId="8974692200199667910" resolveInfo="events" />
             </node>
             <node role="substituteNode" roleId="bnk3.7946551912909981380" type="bnk3.SubstituteNodeFunction" typeId="bnk3.7946551912908713904" id="8974692200203479577" nodeInfo="ng">
+              <link role="cellRootConcept" roleId="bnk3.8767719180164875849" targetNodeId="clqz.5778488248013533883" resolveInfo="Transition" />
+              <link role="conceptForMenu" roleId="bnk3.8767719180164876002" targetNodeId="clqz.5778488248013533883" resolveInfo="Transition" />
               <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8974692200203479579" nodeInfo="sn">
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="7946551912919380307" nodeInfo="nn">
                   <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="7946551912919380308" nodeInfo="sn">
@@ -2301,9 +2303,6 @@
                     </node>
                   </node>
                 </node>
-              </node>
-              <node role="rolePath" roleId="bnk3.7946551912909694162" type="bnk3.SubstituteNodeFunction_LinkReference" typeId="bnk3.7946551912908761959" id="8974692200208342317" nodeInfo="ng">
-                <link role="link" roleId="bnk3.7946551912908762110" targetNodeId="clqz.7835233251114737454" />
               </node>
             </node>
           </node>
