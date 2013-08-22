@@ -588,6 +588,9 @@
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2495970976313195583" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2495970976313195581" resolveInfo="ICodeLocationContext" />
     </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1670233242585856812" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2688792604368329409" resolveInfo="ICodeLocationAware" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2093108837558505658" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="functions" />
@@ -1033,6 +1036,18 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2495970976313195581" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ICodeLocationContext" />
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2410497733756536411" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="ICanCalculateCustomType" />
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2410497733756536657" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1234971358450" resolveInfo="IType" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9122562988439561478" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="CallLikeTypeOverrider" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.3364660638048049748" resolveInfo="NodeAttribute" />
   </root>
 </model>
 
