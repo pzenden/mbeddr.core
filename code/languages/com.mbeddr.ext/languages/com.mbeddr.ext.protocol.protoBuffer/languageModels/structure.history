@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="hqp9" modelUID="r:55b1f5c3-03c5-48c4-82ca-29497c326323(com.mbeddr.ext.protocol.protoBuffer.structure)" version="-1" />
+    </dependencies>
+    <move id="hqp9.8786192108438605840" to="hqp9.8786192108442372409" />
+  </StructureModification>
+</history>
+

@@ -5,109 +5,235 @@
   <devkit namespace="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="hqp9" modelUID="r:55b1f5c3-03c5-48c4-82ca-29497c326323(com.mbeddr.ext.protocol.protoBuffer.structure)" version="-1" implicit="yes" />
+  <import index="hqp9" modelUID="r:55b1f5c3-03c5-48c4-82ca-29497c326323(com.mbeddr.ext.protocol.protoBuffer.structure)" version="0" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="3" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" implicit="yes" />
-  <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
-  <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8786192108438927646" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="simpleProtocol" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108438932055" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1381059980869_4" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="hqp9.Message" typeId="hqp9.8786192108438556733" id="8786192108439439021" nodeInfo="ng">
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="8786192108444607352" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="simpleMessage" />
-      <node role="elements" roleId="hqp9.8786192108438605840" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8786192108440847816" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="dummy" />
-        <node role="type" roleId="hqp9.8786192108439019457" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="8786192108440847817" nodeInfo="ng">
-          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="PhoneType" />
+      <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8786192108444607353" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="MOBILE" />
+        <node role="init" roleId="clbe.8811614583515725856" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108444608429" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="0" />
         </node>
-        <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108440847826" nodeInfo="ng">
+      </node>
+      <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8786192108444608583" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="HOME" />
+        <node role="init" roleId="clbe.8811614583515725856" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108444609948" nodeInfo="ng">
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="1" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.8786192108438605840" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8786192108441851003" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="resRep" />
-        <node role="type" roleId="hqp9.8786192108439019457" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="8786192108441851002" nodeInfo="ng">
-          <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="8786192108441828338" resolveInfo="AnEnum" />
-        </node>
-        <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108441851043" nodeInfo="ng">
+      <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8786192108444611887" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="WORK" />
+        <node role="init" roleId="clbe.8811614583515725856" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108444611888" nodeInfo="ng">
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="2" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108441827766" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1381065169362_1" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108444606569" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1381070221640_22" />
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="8786192108441828338" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="AnEnum" />
-      <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8786192108441828339" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="req" />
-      </node>
-      <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8786192108441828844" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="resp" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108440024715" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1381062499974_18" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108440024833" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1381062500161_19" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108438932170" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1381059981031_5" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="8786192108438927634" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="main" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="hqp9.Message" typeId="hqp9.8786192108438556733" id="8786192108439439021" nodeInfo="ng">
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8786192108438927636" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="8786192108438927649" nodeInfo="ng">
-          <node role="expression" roleId="x27k.8967919205527146150" type="yz9a.ExecuteTestExpression" typeId="yz9a.186853311768094629" id="8786192108438927648" nodeInfo="ng">
-            <node role="tests" roleId="yz9a.5686538669182341016" type="yz9a.TestCaseRef" typeId="yz9a.5686538669182340985" id="8786192108438927647" nodeInfo="ng">
-              <link role="testcase" roleId="yz9a.5686538669182340986" targetNodeId="8786192108438927632" resolveInfo="testCase1" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8786192108438927638" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="8786192108438927639" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="argc" />
-        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8786192108438927640" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="Person" />
+      <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8786192108444601723" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="name" />
+        <node role="type" roleId="hqp9.8786192108439019457" type="yq40.StringType" typeId="yq40.6113173064528067332" id="8786192108444601724" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
         </node>
+        <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108444601845" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+        </node>
+        <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.RequiredModifier" typeId="hqp9.8786192108439175097" id="8786192108444602051" nodeInfo="ng" />
       </node>
-      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="8786192108438927641" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="argv" />
-        <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="8786192108438927642" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8786192108444602348" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="id" />
+        <node role="type" roleId="hqp9.8786192108439019457" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="8786192108444602581" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          <node role="baseType" roleId="yq40.2963921683065158286" type="yq40.StringType" typeId="yq40.6113173064528067332" id="8786192108438927643" nodeInfo="ng">
+        </node>
+        <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108444602350" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+        </node>
+        <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.RequiredModifier" typeId="hqp9.8786192108439175097" id="8786192108444602351" nodeInfo="ng" />
+      </node>
+      <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8786192108444603775" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="email" />
+        <node role="type" roleId="hqp9.8786192108439019457" type="yq40.StringType" typeId="yq40.6113173064528067332" id="8786192108444604019" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108444603777" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+        </node>
+        <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.RequiredModifier" typeId="hqp9.8786192108439175097" id="8786192108444603778" nodeInfo="ng" />
+      </node>
+      <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.NestedMessage" typeId="hqp9.8786192108442281974" id="8786192108444614661" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="PhoneNumber" />
+        <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8786192108444615004" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="number" />
+          <node role="type" roleId="hqp9.8786192108439019457" type="yq40.StringType" typeId="yq40.6113173064528067332" id="8786192108444615005" nodeInfo="ng">
             <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
             <property name="const" nameId="mj1l.2941277002445651368" value="false" />
           </node>
+          <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108444615052" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+          </node>
+        </node>
+        <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8786192108444615370" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="type" />
+          <node role="type" roleId="hqp9.8786192108439019457" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="8786192108444615369" nodeInfo="ng">
+            <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="8786192108444607352" resolveInfo="PhoneType" />
+          </node>
+          <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108444615509" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+          </node>
+          <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="8786192108444615715" nodeInfo="ng" />
+          <node role="defaultValue" roleId="hqp9.8786192108439022387" type="clbe.EnumLiteralRef" typeId="clbe.8811614583515726007" id="8786192108444615921" nodeInfo="ng">
+            <link role="literal" roleId="clbe.8811614583515726008" targetNodeId="8786192108444608583" resolveInfo="HOME" />
+          </node>
+        </node>
+      </node>
+      <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="8786192108444616245" nodeInfo="ng" />
+      <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8786192108444616645" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="phone" />
+        <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.MessageType" typeId="hqp9.8786192108442085784" id="8786192108444616644" nodeInfo="ng">
+          <link role="msg" roleId="hqp9.8786192108442085864" targetNodeId="8786192108444614661" resolveInfo="PhoneNumber" />
+        </node>
+        <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108444616933" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="4" />
+        </node>
+        <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.RepeatedModifier" typeId="hqp9.8786192108439175102" id="8786192108444617139" nodeInfo="ng">
+          <property name="packed" nameId="hqp9.8786192108441949465" value="true" />
+        </node>
+      </node>
+      <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="8786192108444631876" nodeInfo="ng" />
+      <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.ExtensionElement" typeId="hqp9.8786192108443181182" id="8786192108444632185" nodeInfo="ng">
+        <node role="lower" roleId="hqp9.8786192108443181291" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108444632371" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+        </node>
+        <node role="upper" roleId="hqp9.8786192108443181293" type="hqp9.MaxExpression" typeId="hqp9.8786192108444632835" id="8786192108444708863" nodeInfo="ng" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108444617460" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1381070350598_23" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="hqp9.Message" typeId="hqp9.8786192108438556733" id="8786192108444621239" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="AddressBook" />
+      <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8786192108444623369" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="person" />
+        <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.MessageType" typeId="hqp9.8786192108442085784" id="8786192108444623368" nodeInfo="ng">
+          <link role="msg" roleId="hqp9.8786192108442085864" targetNodeId="8786192108439439021" resolveInfo="Person" />
+        </node>
+        <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.RepeatedModifier" typeId="hqp9.8786192108439175102" id="8786192108444623382" nodeInfo="ng">
+          <property name="packed" nameId="hqp9.8786192108441949465" value="true" />
+        </node>
+        <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108444623540" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="1" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="yz9a.TestCase" typeId="yz9a.6275792049641586523" id="8786192108438927632" nodeInfo="ng">
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108444709082" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1381070638940_27" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108444711277" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1381070639124_28" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="8786192108445205136" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="AddressType" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="testCase1" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="8786192108438927630" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8786192108445205137" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="HOME" />
       </node>
-      <node role="body" roleId="yz9a.6275792049641586525" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="8786192108438927631" nodeInfo="ng" />
+      <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8786192108445208165" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="WORK" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108445202280" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1381071703117_31" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="hqp9.MessageExtension" typeId="hqp9.8786192108443468105" id="8786192108444714598" nodeInfo="ng">
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="PersonAddress" />
+      <link role="msg" roleId="hqp9.8786192108443574056" targetNodeId="8786192108439439021" resolveInfo="Person" />
+      <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.NestedMessage" typeId="hqp9.8786192108442281974" id="8786192108445140939" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Address" />
+        <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8786192108445140944" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="street" />
+          <node role="type" roleId="hqp9.8786192108439019457" type="yq40.StringType" typeId="yq40.6113173064528067332" id="8786192108445140945" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108445140992" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+          </node>
+        </node>
+        <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8786192108445141211" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="city" />
+          <node role="type" roleId="hqp9.8786192108439019457" type="yq40.StringType" typeId="yq40.6113173064528067332" id="8786192108445141212" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108445141213" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+          </node>
+        </node>
+        <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8786192108445142297" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="zip" />
+          <node role="type" roleId="hqp9.8786192108439019457" type="mj1l.UnsignedInt32tType" typeId="mj1l.8463282783691618450" id="8786192108445143174" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108445142299" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+          </node>
+        </node>
+      </node>
+      <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="8786192108445145315" nodeInfo="ng" />
+      <node role="elements" roleId="hqp9.8786192108442372409" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8786192108445199358" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="address" />
+        <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.MessageType" typeId="hqp9.8786192108442085784" id="8786192108445199357" nodeInfo="ng">
+          <link role="msg" roleId="hqp9.8786192108442085864" targetNodeId="8786192108445140939" resolveInfo="Address" />
+        </node>
+        <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108445208238" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+        </node>
+        <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.RepeatedModifier" typeId="hqp9.8786192108439175102" id="8786192108445208444" nodeInfo="ng">
+          <property name="packed" nameId="hqp9.8786192108441949465" value="true" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108444627818" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1381070386348_25" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108444629797" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1381070386498_26" />
     </node>
   </root>
   <root type="mj1l.TypeSizeConfiguration" typeId="mj1l.3335993110369795380" id="8786192108438927650" nodeInfo="ng">
