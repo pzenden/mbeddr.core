@@ -13,6 +13,7 @@
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" implicit="yes" />
   <import index="yz9a" modelUID="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" version="0" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
+  <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="9" implicit="yes" />
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="8786192108438927646" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="simpleProtocol" />
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108438932055" nodeInfo="ng">
@@ -31,6 +32,28 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="1" />
         </node>
+      </node>
+      <node role="elements" roleId="hqp9.8786192108438605840" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8786192108441851003" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="resRep" />
+        <node role="type" roleId="hqp9.8786192108439019457" type="clbe.EnumType" typeId="clbe.8811614583515725893" id="8786192108441851002" nodeInfo="ng">
+          <link role="enum" roleId="clbe.8811614583515725894" targetNodeId="8786192108441828338" resolveInfo="AnEnum" />
+        </node>
+        <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8786192108441851043" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108441827766" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1381065169362_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clbe.EnumDeclaration" typeId="clbe.8811614583515725851" id="8786192108441828338" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="AnEnum" />
+      <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8786192108441828339" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="req" />
+      </node>
+      <node role="literals" roleId="clbe.8811614583515725857" type="clbe.EnumLiteral" typeId="clbe.8811614583515725853" id="8786192108441828844" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="resp" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8786192108440024715" nodeInfo="ng">

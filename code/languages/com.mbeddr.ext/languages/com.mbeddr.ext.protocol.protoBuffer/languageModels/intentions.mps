@@ -84,6 +84,7 @@
   </root>
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="8786192108441225689" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="toggleRequired" />
+    <property name="isAvailableInChildNodes" nameId="tp3j.2522969319638091386" value="true" />
     <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="hqp9.8786192108439019323" resolveInfo="MessageField" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="8786192108441225690" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8786192108441225691" nodeInfo="sn">
@@ -146,6 +147,7 @@
   </root>
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="8786192108441227209" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="toggleRepeated" />
+    <property name="isAvailableInChildNodes" nameId="tp3j.2522969319638091386" value="true" />
     <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="hqp9.8786192108439019323" resolveInfo="MessageField" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="8786192108441227210" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8786192108441227211" nodeInfo="sn">
