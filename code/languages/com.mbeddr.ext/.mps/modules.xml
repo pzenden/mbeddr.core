@@ -17,6 +17,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.physicalunits.c/c.mpl" folder="units" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.physicalunits/physicalunits.mpl" folder="units" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.protocol.protoBuffer/com.mbeddr.ext.protocol.protoBuffer.mpl" folder="protoBuffer" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.protocol.protoBufferInModules/com.mbeddr.ext.protocol.protoBufferInModules.mpl" folder="protoBuffer" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines/pluginSolution/com.mbeddr.ext.statemachines.pluginSolution.msd" folder="statemachine" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.statemachines/statemachines.mpl" folder="statemachine" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.ext.comp_mocking/comp_mocking.msd" folder="tests.comp" />
