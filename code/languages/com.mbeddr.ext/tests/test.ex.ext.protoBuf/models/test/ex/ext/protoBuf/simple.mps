@@ -205,7 +205,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Dummy" />
     <node role="contents" roleId="hqp9.8786192108446072201" type="hqp9.Message" typeId="hqp9.8786192108438556733" id="9181644792827274947" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="m1" />
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792827275080" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792827275080" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="bo" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792827275078" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.BooleanType" typeId="hqp9.9181644792826894053" id="9181644792827381874" nodeInfo="ng" />
@@ -213,11 +213,9 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="1" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570821" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="9181644792827383792" nodeInfo="ng" />
-        </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="9181644792827383792" nodeInfo="ng" />
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792827384015" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792827384015" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="by" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792827384016" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.BytesType" typeId="hqp9.8786192108439646143" id="9181644792827386458" nodeInfo="ng" />
@@ -225,13 +223,11 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="2" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570830" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="9181644792827386671" nodeInfo="ng">
-            <property name="value" nameId="yq40.6113173064526131578" value="lalala" />
-          </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="9181644792827386671" nodeInfo="ng">
+          <property name="value" nameId="yq40.6113173064526131578" value="lalala" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828063566" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828063566" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="d" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792828063564" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.DoubleType" typeId="hqp9.9181644792826893857" id="9181644792828063583" nodeInfo="ng" />
@@ -239,14 +235,12 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="3" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570823" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="9181644792828064909" nodeInfo="ng">
-            <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
-            <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
-          </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="9181644792828064909" nodeInfo="ng">
+          <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
+          <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828069513" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828069513" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="f32" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792828069514" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.FixedInt32Type" typeId="hqp9.8786192108439646080" id="9181644792828070159" nodeInfo="ng" />
@@ -254,14 +248,12 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="4" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570822" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828070658" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.8860443239512128104" value="1000000000" />
-          </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828070658" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="1000000000" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828074919" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828074919" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="f64" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792828074920" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.FixedInt64Type" typeId="hqp9.8786192108439646085" id="9181644792828075302" nodeInfo="ng" />
@@ -269,14 +261,12 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="5" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570824" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828074923" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.8860443239512128104" value="10000000000" />
-          </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828074923" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="10000000000" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828065543" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828065543" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="f" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792828065544" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.FloatType" typeId="hqp9.9181644792826893852" id="9181644792828065818" nodeInfo="ng" />
@@ -284,14 +274,12 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="6" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570828" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="9181644792828065547" nodeInfo="ng">
-            <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
-            <property name="postfix" nameId="mj1l.1670233242589904219" value="30" />
-          </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="9181644792828065547" nodeInfo="ng">
+          <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
+          <property name="postfix" nameId="mj1l.1670233242589904219" value="30" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828088255" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828088255" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="i32" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792828088256" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.Int32Type" typeId="hqp9.9181644792826893917" id="9181644792828090582" nodeInfo="ng" />
@@ -299,14 +287,12 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="7" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570820" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828088259" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.8860443239512128104" value="-1000000000" />
-          </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828088259" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="-1000000000" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828091831" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828091831" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="i64" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792828091832" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.Int64Type" typeId="hqp9.9181644792826893922" id="9181644792828092538" nodeInfo="ng" />
@@ -314,14 +300,12 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="8" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570833" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828091835" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.8860443239512128104" value="-10000000000" />
-          </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828091835" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="-10000000000" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828093011" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828093011" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="sf32" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792828093012" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.SignedFixedInt32Type" typeId="hqp9.8786192108439646111" id="9181644792828093729" nodeInfo="ng" />
@@ -329,14 +313,12 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="9" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570826" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828093015" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.8860443239512128104" value="-1000000000" />
-          </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828093015" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="-1000000000" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828098704" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828098704" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="sf64" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792828098705" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.SignedFixedInt64Type" typeId="hqp9.8786192108439631663" id="9181644792828099191" nodeInfo="ng" />
@@ -344,14 +326,12 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="10" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570827" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828098708" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.8860443239512128104" value="-10000000000" />
-          </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828098708" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="-10000000000" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828099769" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828099769" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="si32" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792828099770" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.SignedInt32Type" typeId="hqp9.8786192108439646115" id="9181644792828100267" nodeInfo="ng" />
@@ -359,14 +339,12 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="11" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570819" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828099773" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.8860443239512128104" value="-1000000000" />
-          </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828099773" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="-1000000000" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828100738" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828100738" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="si64" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792828100739" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.SignedInt64Type" typeId="hqp9.8786192108439646054" id="9181644792828101431" nodeInfo="ng" />
@@ -374,14 +352,12 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="12" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570831" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828100742" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.8860443239512128104" value="-10000000000" />
-          </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828100742" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="-10000000000" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828101904" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828101904" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="s" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792828101905" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.StringType" typeId="hqp9.9181644792825900965" id="9181644792828102608" nodeInfo="ng" />
@@ -389,13 +365,11 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="13" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570825" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="9181644792828102917" nodeInfo="ng">
-            <property name="value" nameId="yq40.6113173064526131578" value="lalalal" />
-          </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="yq40.StringLiteral" typeId="yq40.6113173064526131575" id="9181644792828102917" nodeInfo="ng">
+          <property name="value" nameId="yq40.6113173064526131578" value="lalalal" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828103296" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828103296" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="ui32" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792828103297" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.UnsignedInt32Type" typeId="hqp9.9181644792826893989" id="9181644792828104297" nodeInfo="ng" />
@@ -403,14 +377,12 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="14" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570818" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828104723" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.8860443239512128104" value="1000000000" />
-          </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828104723" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="1000000000" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828108095" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792828108095" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="ui64" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792828108096" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.UnsignedInt64Type" typeId="hqp9.9181644792826893984" id="9181644792828109295" nodeInfo="ng" />
@@ -418,18 +390,16 @@
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="15" />
         </node>
-        <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570832" nodeInfo="ng">
-          <node role="expr" roleId="hqp9.7410163866808667419" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828108099" nodeInfo="ng">
-            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.8860443239512128104" value="10000000000" />
-          </node>
+        <node role="defaultValue" roleId="hqp9.8786192108439022387" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="9181644792828108099" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="10000000000" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="9181644792831665473" nodeInfo="ng" />
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="7298925084244391278" nodeInfo="ng" />
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.NestedMessage" typeId="hqp9.8786192108442281974" id="9181644792831665938" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="9181644792831665473" nodeInfo="ng" />
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="7298925084244391278" nodeInfo="ng" />
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.NestedMessage" typeId="hqp9.8786192108442281974" id="9181644792831665938" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="nested" />
-        <node role="elements" roleId="hqp9.9181644792826001653" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792831680259" nodeInfo="ng">
+        <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792831680259" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="nbo" />
           <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792831680260" nodeInfo="ng" />
           <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.BooleanType" typeId="hqp9.9181644792826894053" id="9181644792831680261" nodeInfo="ng" />
@@ -437,15 +407,22 @@
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
             <property name="value" nameId="mj1l.8860443239512128104" value="1" />
           </node>
-          <node role="options" roleId="hqp9.7410163866808667407" type="hqp9.DefaultOption" typeId="hqp9.7410163866808667418" id="7410163866809570829" nodeInfo="ng">
-            <node role="expr" roleId="hqp9.7410163866808667419" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="9181644792831680263" nodeInfo="ng" />
+          <node role="defaultValue" roleId="hqp9.8786192108439022387" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="9181644792831680263" nodeInfo="ng" />
+        </node>
+        <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.ExtensionElement" typeId="hqp9.8786192108443181182" id="8389392507208096121" nodeInfo="ng">
+          <node role="lower" roleId="hqp9.8786192108443181291" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8389392507208096122" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+          </node>
+          <node role="upper" roleId="hqp9.8786192108443181293" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8389392507208096123" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.8860443239512128104" value="3" />
           </node>
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="7410163866808409194" nodeInfo="ng" />
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="9181644792831681166" nodeInfo="ng" />
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="7298925084243709845" nodeInfo="ng" />
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="7298925084243711019" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="9181644792831681166" nodeInfo="ng" />
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="7298925084243709845" nodeInfo="ng" />
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="7298925084243711019" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="xx" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="7298925084243711017" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.MessageType" typeId="hqp9.8786192108442085784" id="7298925084243711116" nodeInfo="ng">
@@ -456,8 +433,8 @@
           <property name="value" nameId="mj1l.8860443239512128104" value="123" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="7298925084243710270" nodeInfo="ng" />
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792831681508" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="7298925084243710270" nodeInfo="ng" />
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792831681508" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="n1" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792831681506" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.MessageType" typeId="hqp9.8786192108442085784" id="9181644792831744642" nodeInfo="ng">
@@ -468,12 +445,11 @@
           <property name="value" nameId="mj1l.8860443239512128104" value="16" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="7410163866808358139" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="hqp9.8786192108446072201" type="hqp9.EmptyProtoBufferContent" typeId="hqp9.9181644792833099205" id="9181644792833459197" nodeInfo="ng" />
     <node role="contents" roleId="hqp9.8786192108446072201" type="hqp9.Message" typeId="hqp9.8786192108438556733" id="9181644792833089967" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="anotherMessage" />
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792833094220" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="9181644792833094220" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="n1" />
         <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="9181644792833094218" nodeInfo="ng" />
         <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.MessageType" typeId="hqp9.8786192108442085784" id="9181644792833094229" nodeInfo="ng">
@@ -484,36 +460,34 @@
           <property name="value" nameId="mj1l.8860443239512128104" value="1" />
         </node>
       </node>
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="7410163866808029100" nodeInfo="ng" />
-      <node role="elements" roleId="hqp9.9181644792825871171" type="hqp9.ExtensionElement" typeId="hqp9.8786192108443181182" id="7410163866808029113" nodeInfo="ng">
-        <node role="lower" roleId="hqp9.8786192108443181291" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7410163866808029151" nodeInfo="ng">
+      <node role="elements" roleId="hqp9.8389392507207211140" type="hqp9.ExtensionElement" typeId="hqp9.8786192108443181182" id="8389392507207796300" nodeInfo="ng">
+        <node role="lower" roleId="hqp9.8786192108443181291" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8389392507207796337" nodeInfo="ng">
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
           <property name="value" nameId="mj1l.8860443239512128104" value="2" />
         </node>
-        <node role="upper" roleId="hqp9.8786192108443181293" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7410163866808029579" nodeInfo="ng">
+        <node role="upper" roleId="hqp9.8786192108443181293" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8389392507207796555" nodeInfo="ng">
           <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-          <property name="value" nameId="mj1l.8860443239512128104" value="20" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="3" />
         </node>
       </node>
     </node>
-    <node role="contents" roleId="hqp9.8786192108446072201" type="hqp9.EmptyProtoBufferContent" typeId="hqp9.9181644792833099205" id="7410163866806392161" nodeInfo="ng" />
-    <node role="contents" roleId="hqp9.8786192108446072201" type="hqp9.MessageExtension" typeId="hqp9.8786192108443468105" id="7410163866807968731" nodeInfo="ng">
-      <link role="msg" roleId="hqp9.8786192108443574056" targetNodeId="9181644792833089967" resolveInfo="anotherMessage" />
-      <node role="elements" roleId="hqp9.9181644792825950877" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="7410163866808028684" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="n1" />
-        <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="7410163866808028685" nodeInfo="ng" />
-        <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.MessageType" typeId="hqp9.8786192108442085784" id="7410163866808028686" nodeInfo="ng">
-          <link role="msg" roleId="hqp9.8786192108442085864" targetNodeId="9181644792831665938" resolveInfo="nested" />
-        </node>
-        <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7410163866808028687" nodeInfo="ng">
-          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-          <property name="value" nameId="mj1l.8860443239512128104" value="2" />
-        </node>
+    <node role="contents" roleId="hqp9.8786192108446072201" type="hqp9.EmptyProtoBufferContent" typeId="hqp9.9181644792833099205" id="8389392507204686031" nodeInfo="ng" />
+    <node role="contents" roleId="hqp9.8786192108446072201" type="hqp9.ProtoBufferEnumDecl" typeId="hqp9.8786192108450011514" id="8389392507204983692" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="hallo" />
+      <node role="literals" roleId="hqp9.8786192108450199625" type="hqp9.ProtoBufferEnumLiteral" typeId="hqp9.8786192108450011640" id="8389392507204983694" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="el" />
+        <property name="value" nameId="hqp9.8786192108450011643" value="1" />
       </node>
-      <node role="elements" roleId="hqp9.9181644792825950877" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="7410163866808385255" nodeInfo="ng" />
-      <node role="elements" roleId="hqp9.9181644792825950877" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="7410163866808385268" nodeInfo="ng" />
-      <node role="elements" roleId="hqp9.9181644792825950877" type="hqp9.EmptyElement" typeId="hqp9.8786192108439240552" id="7410163866808385276" nodeInfo="ng" />
+      <node role="literals" roleId="hqp9.8786192108450199625" type="hqp9.ProtoBufferEnumLiteral" typeId="hqp9.8786192108450011640" id="8389392507204988495" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="e2" />
+        <property name="value" nameId="hqp9.8786192108450011643" value="2" />
+      </node>
+      <node role="literals" roleId="hqp9.8786192108450199625" type="hqp9.ProtoBufferEnumLiteral" typeId="hqp9.8786192108450011640" id="8389392507204988498" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="e3" />
+        <property name="value" nameId="hqp9.8786192108450011643" value="3" />
+      </node>
     </node>
+    <node role="contents" roleId="hqp9.8786192108446072201" type="hqp9.EmptyProtoBufferContent" typeId="hqp9.9181644792833099205" id="8389392507204978944" nodeInfo="ng" />
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="9181644792833895404" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="CFile" />
@@ -551,6 +525,36 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root type="hqp9.ProtoBufferFile" typeId="hqp9.8786192108446072149" id="8389392507208094631" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Dummy2" />
+    <node role="contents" roleId="hqp9.8786192108446072201" type="hqp9.MessageExtension" typeId="hqp9.8786192108443468105" id="8389392507204692957" nodeInfo="ng">
+      <link role="msg" roleId="hqp9.8786192108443574056" targetNodeId="9181644792833089967" resolveInfo="anotherMessage" />
+      <node role="elements" roleId="hqp9.9181644792825950877" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8389392507207588581" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="n2" />
+        <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="8389392507207588579" nodeInfo="ng" />
+        <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.BooleanType" typeId="hqp9.9181644792826894053" id="8389392507207588588" nodeInfo="ng" />
+        <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8389392507207588608" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="hqp9.8786192108446072201" type="hqp9.MessageExtension" typeId="hqp9.8786192108443468105" id="8389392507208095680" nodeInfo="ng">
+      <link role="msg" roleId="hqp9.8786192108443574056" targetNodeId="9181644792831665938" resolveInfo="nested" />
+      <node role="elements" roleId="hqp9.9181644792825950877" type="hqp9.MessageField" typeId="hqp9.8786192108439019323" id="8389392507208095681" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="n3" />
+        <node role="modifier" roleId="hqp9.8786192108439175105" type="hqp9.OptionalModifier" typeId="hqp9.8786192108439175092" id="8389392507208095682" nodeInfo="ng" />
+        <node role="type" roleId="hqp9.8786192108439019457" type="hqp9.BooleanType" typeId="hqp9.9181644792826894053" id="8389392507208095683" nodeInfo="ng" />
+        <node role="id" roleId="hqp9.8786192108439019473" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8389392507208095684" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+        </node>
+      </node>
+    </node>
+    <node role="imports" roleId="hqp9.8389392507205949985" type="hqp9.ProtoBufferImport" typeId="hqp9.8389392507205950022" id="8389392507208094632" nodeInfo="ng">
+      <link role="file" roleId="hqp9.8389392507205950023" targetNodeId="9181644792827189378" resolveInfo="Dummy" />
     </node>
   </root>
 </model>
