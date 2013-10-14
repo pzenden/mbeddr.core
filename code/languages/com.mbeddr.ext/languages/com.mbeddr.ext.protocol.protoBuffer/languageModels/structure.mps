@@ -171,6 +171,12 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="bytes" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="May contain any arbitrary sequence of bytes" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8786192108439631682" resolveInfo="PrimitiveProtoBufferMessageType" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8389392507209985187" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="size" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8786192108442085784" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="elements.types.complex" />
@@ -304,6 +310,12 @@
     <property name="name" nameId="tpck.1169194664001" value="StringType" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="string" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8786192108439631682" resolveInfo="PrimitiveProtoBufferMessageType" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8389392507209512924" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="size" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9181644792826893852" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="elements.types" />
