@@ -2,12 +2,18 @@
 <model modelUID="r:19192cce-e16e-4615-9869-d929e201cd71(mbeddr.tutorial.typesystemtests.vectors@tests)">
   <persistence version="8" />
   <language namespace="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" />
+  <language namespace="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" />
+  <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
+  <language namespace="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" />
+  <language namespace="3d0be1cf-4156-4c3c-ac37-fef83237d8e2(mbeddr.tutorial.vectors)" />
+  <language namespace="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" />
+  <language namespace="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="15" implicit="yes" />
   <import index="vj37" modelUID="r:4c272460-99ea-4d39-8c9a-f1bc63f0c386(mbeddr.tutorial.vectors.structure)" version="2" implicit="yes" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="22" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="4" implicit="yes" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
   <import index="c4fa" modelUID="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" version="5" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="5485104033530070154" nodeInfo="ng" />
   <root type="tp5g.TestInfo" typeId="tp5g.5097124989038916362" id="5485104033530070111" nodeInfo="ng">
@@ -165,6 +171,22 @@
         <property name="const" nameId="mj1l.2941277002445651368" value="false" />
       </node>
     </node>
+    <node role="minFloatValue" roleId="mj1l.6658270785788810330" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="7533215377935698008" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="-1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
+    <node role="minDoubleValue" roleId="mj1l.6658270785788810349" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="7533215377935698009" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="-1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
+    <node role="maxFloatValue" roleId="mj1l.6658270785788810029" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="7533215377935698010" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
+    <node role="maxDoubleValue" roleId="mj1l.6658270785788810339" type="mj1l.ScientificNumber" typeId="mj1l.1670233242589902798" id="7533215377935698011" nodeInfo="ng">
+      <property name="prefix" nameId="mj1l.1670233242589904217" value="1" />
+      <property name="postfix" nameId="mj1l.1670233242589904219" value="37" />
+    </node>
   </root>
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="5485104033530255931" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="testVectors" />
@@ -191,22 +213,22 @@
               </node>
               <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.MultiExpression" typeId="mj1l.5763383285156373020" id="5509345450571795465" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5509345450571795468" nodeInfo="ng">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="512" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="512" />
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="vj37.MatrixLiteral" typeId="vj37.5509345450571797471" id="1090431670134051219" nodeInfo="ng">
                   <node role="cols" roleId="vj37.5509345450571797755" type="vj37.MatrixLiteralCol" typeId="vj37.5509345450571797746" id="1090431670134051220" nodeInfo="ng">
                     <node role="elements" roleId="vj37.5509345450571797747" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5914250579106816286" nodeInfo="ng">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                      <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                     </node>
                     <node role="elements" roleId="vj37.5509345450571797747" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5509345450571545780" nodeInfo="ng">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="22" />
+                      <property name="value" nameId="mj1l.2212975673976043696" value="22" />
                     </node>
                     <node role="elements" roleId="vj37.5509345450571797747" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="5509345450571545785" nodeInfo="ng">
                       <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5509345450571545788" nodeInfo="ng">
-                        <property name="value" nameId="mj1l.8860443239512128104" value="4" />
+                        <property name="value" nameId="mj1l.2212975673976043696" value="4" />
                       </node>
                       <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5509345450571545782" nodeInfo="ng">
-                        <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+                        <property name="value" nameId="mj1l.2212975673976043696" value="3" />
                       </node>
                     </node>
                   </node>
@@ -251,35 +273,35 @@
                 <node role="cols" roleId="vj37.5509345450571797755" type="vj37.MatrixLiteralCol" typeId="vj37.5509345450571797746" id="6806526014021377351" nodeInfo="ng">
                   <node role="elements" roleId="vj37.5509345450571797747" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6806526014021377358" nodeInfo="ng">
                     <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6806526014021377361" nodeInfo="ng">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                      <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                     </node>
                     <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6806526014021377353" nodeInfo="ng">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="1" />
+                      <property name="value" nameId="mj1l.2212975673976043696" value="1" />
                     </node>
                   </node>
                   <node role="elements" roleId="vj37.5509345450571797747" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6806526014021377363" nodeInfo="ng">
-                    <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="3" />
                   </node>
                 </node>
                 <node role="cols" roleId="vj37.5509345450571797755" type="vj37.MatrixLiteralCol" typeId="vj37.5509345450571797746" id="6806526014021377364" nodeInfo="ng">
                   <node role="elements" roleId="vj37.5509345450571797747" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6806526014021377370" nodeInfo="ng">
                     <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6806526014021377373" nodeInfo="ng">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="2" />
+                      <property name="value" nameId="mj1l.2212975673976043696" value="2" />
                     </node>
                     <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6806526014021377367" nodeInfo="ng">
-                      <property name="value" nameId="mj1l.8860443239512128104" value="7" />
+                      <property name="value" nameId="mj1l.2212975673976043696" value="7" />
                     </node>
                   </node>
                   <node role="elements" roleId="vj37.5509345450571797747" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6806526014021377374" nodeInfo="ng">
-                    <property name="value" nameId="mj1l.8860443239512128104" value="51" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="51" />
                   </node>
                 </node>
                 <node role="cols" roleId="vj37.5509345450571797755" type="vj37.MatrixLiteralCol" typeId="vj37.5509345450571797746" id="6806526014021377375" nodeInfo="ng">
                   <node role="elements" roleId="vj37.5509345450571797747" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6806526014021377378" nodeInfo="ng">
-                    <property name="value" nameId="mj1l.8860443239512128104" value="3" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="3" />
                   </node>
                   <node role="elements" roleId="vj37.5509345450571797747" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6806526014021377379" nodeInfo="ng">
-                    <property name="value" nameId="mj1l.8860443239512128104" value="9" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="9" />
                   </node>
                 </node>
               </node>

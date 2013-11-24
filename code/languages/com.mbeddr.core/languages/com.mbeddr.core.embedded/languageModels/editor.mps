@@ -7,9 +7,8 @@
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <import index="nbyu" modelUID="r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)" version="3" />
   <import index="cl6c" modelUID="r:890ea833-37c9-445e-a04d-3b69ce24aa30(com.mbeddr.core.modules.editor)" version="-1" />
-  <import index="vrqd" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0904(com.mbeddr.core.expressions.editor)" version="2" />
   <import index="tpco" modelUID="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" version="-1" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="23" />
+  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="26" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
@@ -301,13 +300,6 @@
       </node>
     </node>
   </root>
-  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6847490852670653179" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="registers.config" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nbyu.6847490852670653132" resolveInfo="EmulatedRegisterKind" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6847490852670653181" nodeInfo="ng">
-      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
-    </node>
-  </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1017957699896608838" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="isr" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nbyu.1017957699896608814" resolveInfo="Isr" />
@@ -395,13 +387,6 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="nbyu.9172009453269286214" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="9172009453269282122" nodeInfo="nn" />
-    </node>
-  </root>
-  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9172009453269286246" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="isr.config" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nbyu.9172009453269286222" resolveInfo="EmulatedInterruptKind" />
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="9172009453269286248" nodeInfo="ng">
-      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
     </node>
   </root>
   <root type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="3471891103984087599" nodeInfo="ng">
@@ -838,6 +823,20 @@
           </node>
         </node>
       </node>
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5152824560130493954" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="registers.config" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nbyu.6847490852670588581" resolveInfo="AbstractRegisterTransformationKind" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6847490852670653181" nodeInfo="ng">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5152824560131535585" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="isr.config" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="nbyu.9172009453269286213" resolveInfo="AbstractInterruptKind" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="9172009453269286248" nodeInfo="ng">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
     </node>
   </root>
 </model>

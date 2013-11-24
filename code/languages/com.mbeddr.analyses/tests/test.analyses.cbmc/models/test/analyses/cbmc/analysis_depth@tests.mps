@@ -6,6 +6,9 @@
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
   <language namespace="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" />
+  <language namespace="ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)" />
+  <language namespace="7e09729e-68e4-4442-9bc8-024c5cdac3a2(com.mbeddr.analyses.cbmc.testing)" />
+  <language namespace="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="eqhl" modelUID="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample_lifted)" version="-1" />
   <import index="fxhk" modelUID="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" version="-1" />
@@ -17,6 +20,7 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tpe3" modelUID="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" version="-1" implicit="yes" />
   <import index="tp4f" modelUID="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" version="0" implicit="yes" />
+  <import index="o23b" modelUID="r:d4a8f9bc-78fb-4fb4-8fad-f65eb374c6c1(com.mbeddr.analyses.cbmc.testing.structure)" version="0" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="441761995015387330" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="AssertAnalysisDepth_Tests" />
     <node role="methods" roleId="tp5g.1216993439383" type="tp4f.DefaultClassifierMethodDeclaration" typeId="tp4f.1205769003971" id="5978633916448867546" nodeInfo="ng">
@@ -53,10 +57,24 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4716091789692224681" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4716091789692224682" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="generatorOutputPath" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="4716091789692224680" nodeInfo="in" />
+            <node role="initializer" roleId="tpee.1068431790190" type="o23b.GeneratorOutputPath" typeId="o23b.1348611803040004605" id="4716091789692224683" nodeInfo="ng">
+              <property name="fqName" nameId="o23b.559557797393041554" value="analysis_depth" />
+              <property name="name" nameId="o23b.559557797393017702" value="analysis_depth" />
+              <property name="stereotype" nameId="o23b.559557797393021807" value="" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="5978633916448867636" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="5978633916448867681" nodeInfo="nn">
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxhk.5294451228540234766" resolveInfo="checkAsserts" />
-            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CBMCAnalysesFacade" />
+            <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="fxhk.8118611477531746924" resolveInfo="CProverTestingFacade" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4716091789692231657" nodeInfo="nn">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4716091789692224682" resolveInfo="generatorOutputPath" />
+            </node>
             <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.ModelReferenceExpression" typeId="tp25.559557797393017698" id="5978633916448867682" nodeInfo="nn">
               <property name="fqName" nameId="tp25.559557797393041554" value="cou" />
               <property name="name" nameId="tp25.559557797393017702" value="analysis_depth" />
@@ -89,7 +107,7 @@
       </node>
     </node>
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="441761995015387331" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="testAnalysisDepth12" />
+      <property name="name" nameId="tpck.1169194664001" value="testAnalysisDepth14" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="441761995015387332" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="441761995015387333" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5978633916448893326" nodeInfo="nn">
@@ -103,10 +121,10 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="5978633916448894187" nodeInfo="nn">
                 <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkFunction" />
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5978633916448894249" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1070475926801" value="analysisDepth12" />
+                  <property name="value" nameId="tpee.1070475926801" value="analysisDepth14" />
                 </node>
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5978633916448894350" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="11" />
+                  <property name="value" nameId="tpee.1068580320021" value="13" />
                 </node>
               </node>
             </node>
@@ -133,10 +151,10 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="5978633916448902228" nodeInfo="nn">
                 <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkFunction" />
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5978633916448902229" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1070475926801" value="analysisDepth12" />
+                  <property name="value" nameId="tpee.1070475926801" value="analysisDepth14" />
                 </node>
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5978633916448902230" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="12" />
+                  <property name="value" nameId="tpee.1068580320021" value="14" />
                 </node>
               </node>
             </node>
@@ -165,7 +183,7 @@
       </node>
     </node>
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="441761995015387643" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="testAnalysisDepth13" />
+      <property name="name" nameId="tpck.1169194664001" value="testAnalysisDepth15" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="441761995015387644" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="441761995015387645" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="441761995015387658" nodeInfo="nn">
@@ -179,10 +197,10 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="5978633916448909952" nodeInfo="nn">
                 <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkFunction" />
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5978633916448909953" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1070475926801" value="analysisDepth13" />
+                  <property name="value" nameId="tpee.1070475926801" value="analysisDepth15" />
                 </node>
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5978633916448909954" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="12" />
+                  <property name="value" nameId="tpee.1068580320021" value="14" />
                 </node>
               </node>
             </node>
@@ -209,10 +227,10 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="5978633916448925104" nodeInfo="nn">
                 <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkFunction" />
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5978633916448925105" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1070475926801" value="analysisDepth13" />
+                  <property name="value" nameId="tpee.1070475926801" value="analysisDepth15" />
                 </node>
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5978633916448925106" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="13" />
+                  <property name="value" nameId="tpee.1068580320021" value="15" />
                 </node>
               </node>
             </node>
@@ -242,7 +260,7 @@
       </node>
     </node>
     <node role="testMethods" roleId="tp5g.1217501895093" type="tp5g.SimpleNodeTest" typeId="tp5g.1225978065297" id="441761995015387581" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="testAnalysisDepth15" />
+      <property name="name" nameId="tpck.1169194664001" value="testAnalysisDepth17" />
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="441761995015387582" nodeInfo="in" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="441761995015387583" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="441761995015387596" nodeInfo="nn">
@@ -256,10 +274,10 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="5978633916448925450" nodeInfo="nn">
                 <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkFunction" />
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5978633916448925451" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1070475926801" value="analysisDepth15" />
+                  <property name="value" nameId="tpee.1070475926801" value="analysisDepth17" />
                 </node>
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5978633916448925452" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="14" />
+                  <property name="value" nameId="tpee.1068580320021" value="16" />
                 </node>
               </node>
             </node>
@@ -286,10 +304,10 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp4f.DefaultClassifierMethodCallOperation" typeId="tp4f.1205769149993" id="5978633916448934473" nodeInfo="nn">
                 <link role="member" roleId="tp4f.1205756909548" targetNodeId="5978633916448867546" resolveInfo="checkFunction" />
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5978633916448934474" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1070475926801" value="analysisDepth15" />
+                  <property name="value" nameId="tpee.1070475926801" value="analysisDepth17" />
                 </node>
                 <node role="actualArgument" roleId="tp4f.1205770614681" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5978633916448934475" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="15" />
+                  <property name="value" nameId="tpee.1068580320021" value="17" />
                 </node>
               </node>
             </node>
